@@ -1,0 +1,13 @@
+<div>
+    <img [src]="user.pics">
+    <div>
+        <p>Nom : {{user.lastName}}</p>
+        <p>Prénom : {{user.firstName}}</p>
+        <p>Pseudo : {{user.pseudo}}</p>
+        <p *ngIf="isHiding" id="userAge">Age : {{user.age}}</p>
+        <p>{{user.citation}}</p>
+        <input type="text" [(ngModel)]="user.citation"><br><br>
+        <button (click)="hide()">{{buttonText}}</button><br><br>
+    </div>
+</div>
+ 
